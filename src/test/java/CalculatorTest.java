@@ -10,16 +10,16 @@ public class CalculatorTest {
     }
     @Test
     public void test_squareRoot() {
-        double val = 25.0;
-        double expectedResult = 5.0;
+        double val = 64.0;
+        double expectedResult = 8.0;
         double result = calc.squareRoot(val);
         Assert.assertEquals(expectedResult, result, 0.0f);
     }
 
     @Test
     public void test_factorial() {
-        int a = 5;
-        int expectedResult = 120;
+        int a = 7;
+        int expectedResult = 5040;
         int result = calc.factorial(a);
         Assert.assertEquals(expectedResult, result);
     }
@@ -35,8 +35,8 @@ public class CalculatorTest {
     @Test
     public void test_power() {
         double a = 2.0;
-        double b = 5.0;
-        double expectedResult = 32.0;
+        double b = 7.0;
+        double expectedResult = 128.0;
         double result = calc.power(a,b);
         Assert.assertEquals(expectedResult, result, 0.0f);
     }

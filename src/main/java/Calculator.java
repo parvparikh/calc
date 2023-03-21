@@ -8,55 +8,44 @@ public class Calculator {
         Scanner reader = new Scanner(System.in);
         int op, flag=0;
         double num, exp;
-        int numm;
+        int numi;
 
         do{
-            System.out.println("------------Calculator--------------");
-            System.out.println("Choose one option:");
-            System.out.println("");
+            System.out.println("Scientific Calculator");
             System.out.println("1. Square root");
             System.out.println("2. Factorial");
             System.out.println("3. Natural Log");
             System.out.println("4. Power");
             System.out.println("5. Exit");
-            System.out.println("");
-            System.out.print("Choice : ");
-            System.out.println("");
+            System.out.print("Enter a Choice : ");
             op = reader.nextInt();
+            System.out.println("");
             if(op==5) flag = 1;
             else{
                 switch(op){
 
                     case 1:  // Square Root
-                        System.out.println("You choose Square Root!!");
-                        System.out.println("");
-                        System.out.print("Enter number: ");
+                        System.out.print("SquareRoot of : ");
                         num = reader.nextDouble();
                         squareRoot(num);
                         break;
 
                     case 2: //Factorial
-                        System.out.println("You choose Factorial!!");
-                        System.out.println("");
-                        System.out.print("Enter number: ");
-                        numm = reader.nextInt();
-                        factorial(numm);
+                        System.out.print("Factorial of : ");
+                        numi = reader.nextInt();
+                        factorial(numi);
                         break;
 
                     case 3: //Natural Log
-                        System.out.println("You choose Natural Log!!");
-                        System.out.println("");
-                        System.out.print("Enter number: ");
+                        System.out.print("NaturalLog of: ");
                         num = reader.nextDouble();
                         naturalLog(num);
                         break;
 
                     case 4: //Power
-                        System.out.println("You choose Power!!");
-                        System.out.println("");
-                        System.out.print("Enter number: ");
+                        System.out.print("Power of : ");
                         num = reader.nextDouble();
-                        System.out.print("exponent: ");
+                        System.out.print("with exponent: ");
                         exp = reader.nextDouble();
                         power(num,exp);
                         break;
