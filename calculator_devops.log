@@ -10,3 +10,7 @@
 2023-03-21 14:32:58.069 [main] INFO  Calculator - NaturalLog function : naturalLog(2.718) = 0.999896315728952
 2023-03-21 14:32:58.070 [main] INFO  Calculator - squareRoot function: squareRoot(64.0) = 8.0
 2023-03-21 14:32:58.084 [main] INFO  Calculator - Power function : power(2.0,7.0) = 128.0
+2023-03-21 15:57:34.191 [main] INFO  Calculator - Factorial function executed
+2023-03-21 15:57:34.203 [main] INFO  Calculator - NaturalLog function executed
+2023-03-21 15:57:34.204 [main] INFO  Calculator - squareRoot function executed
+2023-03-21 15:57:34.216 [main] INFO  Calculator - Power function executed

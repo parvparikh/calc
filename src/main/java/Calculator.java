@@ -63,7 +63,7 @@ public class Calculator {
         System.out.println("");
         System.out.println("squareRoot("+num+") = "+c);
         System.out.println("");
-        logger.info("squareRoot function: "+"squareRoot("+num+") = "+c);
+        logger.info("squareRoot function executed");
         return c;
     }
 
@@ -73,7 +73,7 @@ public class Calculator {
         System.out.println("");
         System.out.println("factorial("+num+") = "+c);
         System.out.println("");
-        logger.info("Factorial function : "+"factorial("+num+") = "+c);
+        logger.info("Factorial function executed");
         return c;
     }
     public static double naturalLog(double num){
@@ -81,7 +81,7 @@ public class Calculator {
         System.out.println("");
         System.out.println("naturalLog("+num+") = "+c);
         System.out.println("");
-        logger.info("NaturalLog function :"+" naturalLog("+num+") = "+c);
+        logger.info("NaturalLog function executed");
         return c;
     }
     public static double power(double num, double exp){
@@ -89,7 +89,7 @@ public class Calculator {
         System.out.println("");
         System.out.println("power("+num+","+exp+") = "+c);
         System.out.println("");
-        logger.info("Power function :"+" power("+num+","+exp+") = "+c);
+        logger.info("Power function executed");
         return c;
     }
 
