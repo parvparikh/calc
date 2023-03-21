@@ -12,7 +12,7 @@ public class Calculator {
 
         do{
             System.out.println("------------Calculator--------------");
-            System.out.println("Choices of Operations:");
+            System.out.println("Choose one option:");
             System.out.println("");
             System.out.println("1. Square root");
             System.out.println("2. Factorial");
@@ -20,7 +20,7 @@ public class Calculator {
             System.out.println("4. Power");
             System.out.println("5. Exit");
             System.out.println("");
-            System.out.print("Enter your choice(number): ");
+            System.out.print("Choice : ");
             System.out.println("");
             op = reader.nextInt();
             if(op==5) flag = 1;
@@ -72,9 +72,9 @@ public class Calculator {
     public static double squareRoot(double num){
         double c = Math.sqrt(num);
         System.out.println("");
-        System.out.println("The Result is "+c);
+        System.out.println("squareRoot("+num+") = "+c);
         System.out.println("");
-        logger.info("Executing squareRoot function!");
+        logger.info("squareRoot function: "+"squareRoot("+num+") = "+c);
         return c;
     }
 
@@ -82,25 +82,25 @@ public class Calculator {
         int c = num ;
         for(int i=num-1; i>=1; i--) c = c*i;
         System.out.println("");
-        System.out.println("The Result is "+c);
+        System.out.println("factorial("+num+") = "+c);
         System.out.println("");
-        logger.info("Executing Factorial function!");
+        logger.info("Factorial function : "+"factorial("+num+") = "+c);
         return c;
     }
     public static double naturalLog(double num){
         double c = Math.log(num);
         System.out.println("");
-        System.out.println("The Result is "+ c);
+        System.out.println("naturalLog("+num+") = "+c);
         System.out.println("");
-        logger.info("Executing naturalLog function!");
+        logger.info("NaturalLog function :"+" naturalLog("+num+") = "+c);
         return c;
     }
     public static double power(double num, double exp){
         double c = Math.pow(num,exp);
         System.out.println("");
-        System.out.println("The Result is "+ c);
+        System.out.println("power("+num+","+exp+") = "+c);
         System.out.println("");
-        logger.info("Executing Power function!");
+        logger.info("Power function :"+" power("+num+","+exp+") = "+c);
         return c;
     }
 
